@@ -19,12 +19,22 @@ nav {
     height: 71px;
     left: -1px;
     top: 0;
-
+    margin: 0 auto;
+    
 }
 
 nav ul {
-    list-style: none; /* Removes bullet points */
+    display: flex;
+    justify-content: space-around; /* Ensures even spacing */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+
 
 .rectangle1{
     box-sizing: border-box;
@@ -47,9 +57,8 @@ nav ul {
 }
 
 nav ul li.members {
-    position: absolute;
-    width: 59px;
-    height: 24px;
+    width: auto;
+    height: auto;
     left: 75px;
     top: 25px;
 }
@@ -60,13 +69,11 @@ nav ul li.members a {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
     /* identical to box height, or 171% */
     color: #000000;
 }
 
 nav ul li.events{
-    position: absolute;
     width: 81px;
     height: 24px;
     left: 163px;
@@ -86,7 +93,6 @@ nav ul li.events a{
 
 nav ul li.about{
     text-decoration: none; /* Removes underline */
-    position: absolute;
     width: 57px;
     height: 24px;
     left: 273px;
@@ -105,9 +111,8 @@ nav ul li.about a{
 }
 
 nav ul li.contact{
-    position: absolute;
-    width: 67px;
-    height: 24px;
+    width: auto;
+    height: auto;
     left: 360px;
     top: 25px;
 }
@@ -124,11 +129,12 @@ nav ul li.contact a{
 }
 
 nav ul li.logo{
-    position: absolute;
-    width: 156px;
-    height: 24px;
+    width: auto;
+    height: auto;
     left: 522px;
     top: 25px;
+    display: inline-block;
+    justify-content: center;
 }
 
 nav ul li.logo a{
